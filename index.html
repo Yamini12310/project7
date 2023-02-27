@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by yamini</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pharmacy</title>
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main-div">
+<div class="logo-div">
+<img src=" https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="">
+<p class="logo-text">Pharmacy</p>
+</div>
+<div class="keypoint-div">
+<a class="order-page">Orders</a>
+<a class="products-page">Products</a>
+<a class="users-page">Users</a>
+</div>
+</div>
+<div class="container form">
+<div class="form-main-div">
+<form class="form-div" id="loginForm">
+<h1>Sign In</h1>
+<input type="text" name="username" placeholder="Enter Username" class="user-div">
+<input type="password" name="password" placeholder="Enter Password" class="user-div"> <input type="submit" value="Login" class="login-div" id="btnId">
+</form>
+</div>
+</div>
+<div class="container table1-name">
+<div class="header">
+ <h1>Orders</h1>
+</div>
+<div class="table-box">
+<div class="left-div">
+<div class="checkbox-div">
+<h3 class="filter">Filter</h3>
+<label><input class="option" name="name" type="checkbox" value="New" checked>New</label>
+<label><input class="option" name="name" type="checkbox" value="Packed" checked>Packed</label>
+
+<label><input class="option" name="name" type="checkbox" value="InTransit" checked>InTransit</label>
+
+<label><input class="option" name="name" type="checkbox" value="Delivered" checked>Delivered</label>
+
+</div>
+
+</div>
+
+<div id="table-wrapper">
+<div id="table-data">
+<table>
+<tr>
+<th class="column">ID</th>
+<th class="column">Customer</th>
+<th class="column">Date</th>
+<th class="column">Amount</th>
+<th class="column">Status</th>                  
+  </tr>
+<tbody id="table-body">
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container table2-name">
+<div class="header">
+<h1>products</h1>
+</div>
+<div class="table-box">
+<div class="left-div">
+  <div class="checkbox-div">
+  <h3>filter</h3> 
+ <label><input class="option1" name="name1" type="checkbox" value="2022" checked>expired</label>
+                                           <label><input class="option1" name="name1" type="checked">low stock</label>                   </div>                                         
+<div id="table-wrapper2">
+
+<div id="table2-data">
+<table>
+<tr>
+  <th class="column1">ID</th>
+  <th class="column1">product name</th>
+  <th class="column1">product brand</th>
+  <th class="column1">expiry date</th>
+  <th class="column1">unit price</th>
+  <th class="column">stock</th>
+  </tr>
+  <tbody id="table2-body"></tbody>
+  </table>
+  </div>
+  </div>
+  </div>
+  </div>
+   <div class="container table3-name">
+    <div class="header">
+      <h1>users</h1>
+    </div>
+    <div class="table3-box">
+      <div class="upper-div">
+        <form id="formId">
+
+<input type="text" id="myInput" onkeyup="searchFun()" placeholder="Search by names..">
+<input type="reset" id="reset" onclick="clearInput()">
+</form>
+</div>
+<div id="table-wrapper3">
+  
+<div id="table3-data">
+  <table>
+<tbody id="table3-body">
+<tr>                                             <th class="column2">ID</th>
+<th class="column2">User Avatar</th>
+<th class="column2">Full Name</th>
+<th class="column2">DOB</th>
+<th class="column2">Gender</th>
+<th class="column2">Current Location</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="./script.js"></script>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
